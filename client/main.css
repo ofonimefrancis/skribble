@@ -1,0 +1,196 @@
+/* CSS declarations go here */
+* { margin: 0; padding: 0; list-style-type: none; text-decoration: none;}
+a { color: #444; }
+body {
+    background: #f4f4f4;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #444;
+    /* font-size: 62.5%; */
+    text-rendering: optimizeLegibility;
+
+  }
+/**
+  Style the Header and navigation
+***/
+#header {
+  background: #333333;
+  height: 60px;
+  line-height: 60px;
+  justify-content: space-between;
+}
+
+#header, .header_inner, #nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.center{ width: 95%; margin: 0 auto}
+.header_inner h3 { color: #fff; font-weight: 600;}
+
+
+/**Hide all sub_menu and display them on hover **/
+li > ul {
+  display: none;
+}
+
+li.skribs { margin-left: 20px;}
+li.has_menu > a {
+  color: #bbb;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 6px;
+  text-decoration: none;
+}
+
+li.has_menu:hover ul.sub_menu {
+  display: block;
+  background: #333;
+  position: absolute;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+li.has_menu:hover > ul.sub_menu li{
+  width: 140px;
+  box-sizing: border-box;
+  /**padding: 0 12px;**/
+  z-index: 120;
+  position: relative;
+
+
+}
+
+li.has_menu:hover > ul.sub_menu li a{
+  height: 40px;
+  line-height: 40px;
+  background: red;
+  margin: 0 auto;
+  padding: 0 50%;
+}
+
+/** Form and avatar **/
+.fr { display: flex; margin-left: auto; }
+
+
+.avatar { width: 30px; height: 30px; border-radius: 100%; align-self: center;}
+
+
+/**
+  Toggle Navigation **/
+  #toggle-nav {
+    display: none;
+  }
+
+  #header input[type=text] {
+    border: 0;
+    height: 30px;
+    margin-left: 10px;
+    padding: 0 8px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+
+
+
+
+#nav li ul.tabs li.separate {
+    margin: 4px 0 0 0;
+    padding: 4px 0 0 0;
+    border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+
+
+.meta-data {
+  height: 50px;
+  background: rgba(252, 253, 232, 0.7);
+  line-height: 50px;
+}
+
+.meta-data > a {
+  font-weight: 400px;
+}
+.meta--tagline {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.meta--tagline ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.meta--tagline ul > li {
+  margin: 0 12px;
+}
+
+.skribbles {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 950px;
+
+}
+.w-center { display: flex; justify-content: center; margin: 100px auto;}
+
+
+.box {
+  width: 22%;
+  margin-bottom: 40px;
+}
+
+.shot {
+  margin: 0 12px;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+  box-sizing: border-box;
+  padding: 10px 12px;
+}
+
+.box ul li { display: flex;}
+
+.box > img {
+  margin: 0 auto;
+  max-width: 100%;
+}
+.box ul.skribs-meta { display: flex; justify-content: flex-end; margin-top: 6px;}
+.box ul , .box ul.skribs-meta li{ display: flex;  font-size: 12px; justify-content: space-around;}
+.box ul.skribs-meta li a { color: #777; font-weight: bold;}
+
+.box ul.skribs-meta li  img {
+  display: flex;
+  align-self: baseline;
+  height: 10px;
+  color: #EEE;
+  margin: 0 4px;
+}
+
+
+.user-data {
+  display: flex;
+  margin-top: 16px;
+  box-sizing: border-box;
+  padding: 0 12px;
+}
+
+.user-data a { display: flex; justify-content: flex-start; position: relative; top: -12px; color: blue;}
+
+.user-data img {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 9px;
+
+}
+
+span.username {
+  color : #3a8bbb;
+}

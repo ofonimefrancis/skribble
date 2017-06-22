@@ -1,0 +1,31 @@
+1. Work on the LOGIN and REGISTRATION
+    - Research on how login and registration can be implemented with Meteor
+    - Packages you can use to implement this
+
+2.  Work on The Models/Collections for
+    - User
+    - Scribbles ie shots by people
+        - Popular Scribbles
+        - Recent Scribbles
+        - Debut Scribbles
+        - Teams ( Scribble made by a team)
+        - Projects
+    - Designers
+        - Find Designers
+        - Design Teams
+        - Add Design Teams
+
+    - Meetups
+        -Scribble Meetup
+        -Host a Meetup
+
+    - Jobs
+        - All
+        - Remote / Local
+        - Teams Hiring
+        - Post a Job
+
+    - About
+        - Shops
+        - Places
+        - Support
